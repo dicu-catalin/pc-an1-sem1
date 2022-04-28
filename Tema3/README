@@ -1,0 +1,37 @@
+Task 1 - Am calculat media pentru fiecare pixel si am pus-o intr-o matrice noua
+ 	 de bitMap.
+
+Task 2 - Am verificat cine este mai mare dintre inaltime si latime si am creeat
+	 o noua matrice de forma patratica. In cazul in care inaltimea este mai
+	 mare, in noua matrice de pixeli pun valorile 255 la fiecare pixel de pe
+	 coloanele care depasesc dimensiunea matricei initiale. In coloanele 
+	 ramase pun valorile din coloanele matricei initiale.
+	 In cazul in care latimea este mai mare, in noua matrice de pixeli pun
+	 valorile 255 la fiecare pixel de pe liniile care depasesc dimensiunea
+	 matricei initiale. In liniile ramase pun valorile din coloanele matricei
+	 initiale.
+
+Task 3 - Fac suma dintre pixelii aflati la o distanta mai mica de
+	 (dimensiunea matricei de filtru)/2 de pixelul pe care il modific 
+	 inmultiti cu matricea de filtru. Daca un pixel vecin nu exista trec
+	 la urmatorul pixel vecin. Daca suma este mai mare de 255 pixelul
+	 va lua valoarea 255. Daca suma este mai mica decat 0 pixelul va lua
+	 valoarea 0. 
+
+Task 4 - Daca trebuie sa aplic filtrul de min pooling compar fiecare culoare din
+	 pixel cu pixelii care se afla la o distanta mai mica de 
+	 (dimensiunea pooling-ului)/2 de el si pastrez cea mai mica valoare.
+	 Pixelii de pe margine vor avea valoare (0 0 0), deoarece ei au mereu
+	 cel putin un vecin (0 0 0).
+	 Daca trebuie sa aplic filtrul de max pooling compar compar fiecare
+	 culoare din pixel cu pixelii care se afla la o distanta mai mica de
+	 (dimensiunea pooling-ului)/2 de el si pastrez cea mai mare valoare.
+
+Task 5 - Construiesc o matrice pentru zone de dimensiunea matricei de pixeli. 
+	 Pornesc de la primul pixel din matrice si verific fiecare termen 
+	 pentru a determina zona. Pixelilor care corespund cerintelor le dau
+	 valoarea 1 in matricea de zona, iar celor care nu, valoarea 2, pentru
+	 a nu verifica de doua ori acelasi pixel. Dupa ce se determina zona,
+	 se calculeaza suma pixelilor si numarul lor, dupa care se inlocuiesc 
+	 pixelii care apartin zonei si iau valoarea -1, iar cei care nu apartin
+	 sunt setati pe 0.
