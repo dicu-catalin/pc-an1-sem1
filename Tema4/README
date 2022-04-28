@@ -1,0 +1,24 @@
+Task 1 - Creez un vector care va contine doar valoarea 1 si inmultesc fiecare
+	 numar cu toate celelalte valori din vectorul initial.
+
+Task 2 - Liniile din matricea noua iau valorile coloanelor din matricea veche
+	 de la dreapta la stanga.
+
+Task 3 - Folosesc gruparile de cate 4 querry-uri si adun valorile de pe linii
+	 si coloane pana la valorile respective.
+
+Task 4 - Aloc soferul, vectorul de curse si fiecare cursa in parte, dupa care
+	 aloc vectorul de soferi folosind prima functie.
+
+Task 5 - Citesc din fisier fiecare componenta din structura, dupa care le scriu
+	 in celalalt fisier binar.
+
+Task 6 - Calculez numarul de curse terminate si numarul total de stele pentru
+	 fiecare sofer si pastrez soferul cu cea mai mare medie a stelelor.
+
+Task 7 - Calculez distantele pentru fiecare sofer, dupa care ii sortez in 
+	 functie de distanta si creez un vector in care ii pastrez pe primii
+	 resultsNo soferi.
+
+Task 8 - Eliberez fiecare cursa, vectorul de curse, soferul si vectorul de 
+	 soferi.
