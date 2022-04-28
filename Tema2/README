@@ -1,0 +1,22 @@
+UPPERCASE: Literele de la inceput de rand le transform in litera mare, in cazul
+in care acestea nu sunt, iar pe restul le fac litere mici prin adunare si scadere
+cu 32.
+
+TRIMMING: Sterg toate non-caracterele dintr o copie a poemului, dupa care pun 
+fiecare cuvant inapoi, urmat de spatiu.
+
+MAKE_IT_SILLY: Generez un numar intre 0 si 1, iar daca este mai mic decat
+probabilitatea primita de la tastatura schimb litera respectiva prin adunare sau
+scadere cu 32
+
+MAKE_IT_FRIENDLIER: Am separat o copie in cuvinte si am verificat daca au diminutiv.
+In cazul in care aveau le inlocuiam cu diminutivul, Copiam tot ce este inainte 
+de cuvand,lipesc cuvantul care rimeaza si dupa copiez restul propozitiei
+
+MAKE_IT_RHYME: Pastrez ultimul cuvant de pe fiecare rand. In cazul in care
+cuvantul contine non-caractere, le sterg. Pastrez ultima litera din fiecare
+cuvant si o transform in litera mica. Verific daca ultimele litere sunt
+la fel, iar daca nu verific daca primul cuvant are sinonime. Aflu cel mai
+mic lexicografic sinonim care rimeaza cu al doilea cuvant. In cazul in care
+primul cuvant nu are sinonime aflu cel mai mic lexicografic sinonim al celui
+de-al doilea cuvant care rimeaza cu al primul cuvant.
